@@ -3,41 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ma Page Web 3D</title>
+    <title>NextStep - Explorer l'informatique</title>
     <style>
         body {
             margin: 0;
-            overflow: hidden;
-        }
-
-        #scene-container {
-            width: 100vw;
-            height: 100vh;
-            position: absolute;
-            top: 0;
-            left: 0;
+            font-family: 'Arial', sans-serif;
         }
 
         header {
-            position: absolute;
-            top: 20px;
-            left: 20px;
+            background-color: #0C1821;
+            padding: 20px;
+            text-align: center;
             color: #fff;
-            z-index: 1;
+        }
+
+        nav {
+            background-color: #001F3F;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 15px;
+            margin: 0 10px;
+            font-weight: bold;
         }
 
         section {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            text-align: center;
-            z-index: 1;
-            color: #fff;
+            padding: 20px;
         }
 
         h1, h2 {
-            color: #00A8E8;
+            color: #0C1821;
         }
 
         p {
@@ -45,43 +44,55 @@
         }
 
         footer {
-            text-align: center;
-            position: absolute;
-            bottom: 20px;
-            left: 50%;
-            transform: translateX(-50%);
-            z-index: 1;
+            background-color: #001F3F;
             color: #fff;
-        }
-
-        footer p {
-            margin: 0;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
         }
     </style>
 </head>
 <body>
 
-    <div id="scene-container"></div>
-
     <header>
-        <h1>Bienvenue sur ma page web 3D</h1>
+        <h1>NextStep</h1>
+        <p>Explorer l'informatique avec passion et innovation</p>
     </header>
 
-    <section>
-        <h2>Introduction</h2>
-        <p>Cette page web utilise des effets 3D pour une expérience interactive.</p>
-        <p>Vous trouverez ci-dessous des sections pour votre CV et une présentation de votre entreprise.</p>
+    <nav>
+        <a href="#about">À Propos</a>
+        <a href="#services">Services</a>
+        <a href="#projects">Projets</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section id="about">
+        <h2>À Propos de NextStep</h2>
+        <p>NextStep est une entreprise de développement informatique dédiée à fournir des solutions innovantes et de qualité. Notre équipe expérimentée est prête à relever les défis technologiques du futur.</p>
+    </section>
+
+    <section id="services">
+        <h2>Nos Services</h2>
+        <p>Nous offrons une gamme complète de services de développement logiciel, de consultation technologique, et de gestion de projet. Notre engagement envers l'excellence nous distingue sur le marché.</p>
+    </section>
+
+    <section id="projects">
+        <h2>Nos Projets</h2>
+        <p>Découvrez certains de nos projets récents qui démontrent notre expertise et notre créativité dans le domaine du développement informatique.</p>
+        <!-- Ajoutez des détails sur vos projets ici -->
+    </section>
+
+    <section id="contact">
+        <h2>Contactez NextStep</h2>
+        <p>Prêt à démarrer un projet avec nous ou avez-vous des questions ? Contactez-nous dès aujourd'hui pour discuter de vos besoins informatiques.</p>
+        <!-- Ajoutez un formulaire de contact ou des informations de contact ici -->
     </section>
 
     <footer>
-        <p>&copy; 2024 Ma Page Web 3D</p>
+        <p>&copy; 2024 NextStep - Explorer l'informatique</p>
     </footer>
-
-    <script src="https://threejs.org/build/three.min.js"></script>
-    <script>
-        // Ajoutez ici votre code JavaScript Three.js pour les effets 3D
-        // Par exemple, une sphère en rotation, un plan pour afficher le CV et la présentation de l'entreprise, etc.
-    </script>
 
 </body>
 </html>
